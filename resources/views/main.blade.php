@@ -88,7 +88,7 @@
               
             <!-- UI/UX / Frontend Developer -->
             <div class="relative mb-10">
-              <div class="absolute -left-[2.125rem] top-1 w-3.5 h-3.5 bg-blue-400 rounded-full border-4 border-black z-10"></div>
+              <div class="absolute -left-[2.50rem] top-1 w-3.5 h-3.5 bg-blue-500 rounded-full border-4 border-black z-10"></div>
               <div>
                 <h4 class="text-xl font-semibold text-white mb-2">UI/UX | Frontend Developer</h4>
                 <p class="text-gray-400 font-medium mb-1">PUP Taguig Campus</p>
@@ -98,7 +98,7 @@
               
             <!-- Documentation Assistant & Accreditation Intern -->
             <div class="relative">
-              <div class="absolute -left-[2.125rem] top-1 w-3.5 h-3.5 bg-blue-400 rounded-full border-4 border-black z-10"></div>
+              <div class="absolute -left-[2.50rem] top-1 w-3.5 h-3.5 bg-blue-500 rounded-full border-4 border-black z-10"></div>
               <div>
                 <h4 class="text-xl font-semibold text-white mb-2">Documentation Assistant & Accreditation Intern</h4>
                 <p class="text-gray-400 font-medium mb-1">PUP Taguig Campus</p>
@@ -113,7 +113,7 @@
 
   <section id="skills" class="min-h-screen flex items-center justify-center py-16 px-8">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8 text-blue-500">My Skills</h2>
+      <h2 class="text-4xl font-bold mb-8 text-blue-500">Skills, Technologies & Tools</h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           <!-- HTML -->
@@ -273,8 +273,9 @@
                 social engagement tools. With a modern and intuitive interface,
                 it makes connecting online simple and fun.
               </p>
-              <a href="#" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
-                View Project <span>→</span>
+              <a href="https://github.com/PUP-BSIT/project-club-404.git"
+                 target="_blank" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
+                View Github <span>→</span>
               </a>
             </div>
           </div>
@@ -300,7 +301,8 @@
                 Built with cutting-edge technologies, it simplifies money
                 management and reduces the time and effort typically associated with budgeting.
               </p>
-              <a href="#" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
+              <a href="https://github.com/PUP-BSIT/project-appvengers.git"
+                 target="_blank" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
                 View GitHub <span>→</span>
               </a>
             </div>
@@ -326,8 +328,9 @@
                 It allows students to easily register for courses, manage
                 their schedules, and track their academic progress online.
               </p>
-              <a href="#" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
-                View Project <span>→</span>
+              <a href="https://github.com/ynion-mabeamae/DBA_Student_Enrollment_System.git"
+                 target="_blank" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
+                View GitHub <span>→</span>
               </a>
             </div>
           </div>
@@ -357,8 +360,9 @@
                 It enables users to efficiently track, organize, and report
                 their community service hours, making it easier to contribute to meaningful causes.
               </p>
-              <a href="#" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
-                View Project <span>→</span>
+              <a href="https://github.com/PUPT-Quantum-Leap/capstone-nlcom-volunteer-management-system.git"
+                 target="_blank" class="text-blue-500 hover:text-blue-400 font-medium inline-flex items-center gap-2">
+                View GitHub <span>→</span>
               </a>
             </div>
           </div>
@@ -366,86 +370,98 @@
     </div>
   </section>
 
-  <section id="contact" class="min-h-screen flex items-center justify-center py-16 px-8">
+  <section id="contact" class="min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 md:px-8">
     <div class="max-w-6xl mx-auto w-full">
-      <h2 class="text-4xl font-bold mb-12 text-blue-500 text-center">
-        Get In Touch
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 text-blue-500 text-center">
+          Get In Touch
       </h2>
-          
-      <div class="flex flex-col lg:flex-row gap-12 items-start">
-        <!-- Left Side: Contact Info -->
-        <div class="flex-1">
-          {{-- <h3 class="text-3xl font-bold text-white mb-4">Let's Connect</h3> --}}
-          <p class="text-gray-400 mb-8 text-lg leading-relaxed">
-            I'm always open to discussing new projects, creative ideas,
-            or opportunities to be part of your vision.
-          </p>
-          
-          <!-- Email -->
-          <div class="flex items-start gap-4 mb-6">
-            <div class="w-12 h-12 bg-[#1e293b] rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-envelope text-blue-400 text-xl"></i>
+      
+      <div class="flex flex-col lg:flex-row gap-8 sm:gap-10 md:gap-12 items-start">
+          <!-- Left Side: Contact Info -->
+          <div class="flex-1 w-full">
+            <p class="text-gray-400 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
+              I'm always open to discussing new projects, creative ideas,
+              or opportunities to be part of your vision.
+            </p>
+              
+            <!-- Email -->
+            <div class="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#1e293b] rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-envelope text-blue-400 text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold mb-1 text-sm sm:text-base">Email</h4>
+                <a href="mailto:ynion.mabeamae@gmail.com" class="text-gray-400 hover:text-blue-400 transition text-sm sm:text-base break-all">
+                  ynion.mabeamae@gmail.com
+                </a>
+              </div>
             </div>
-            <div>
-              <h4 class="text-white font-semibold mb-1">Email</h4>
-              <a href="mailto:ynion.mabeamae@gmail.com" class="text-gray-400 hover:text-blue-400 transition">
-                ynion.mabeamae@gmail.com
+              
+            <!-- Phone -->
+            <div class="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#1e293b] rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone text-blue-400 text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold mb-1 text-sm sm:text-base">Phone</h4>
+                <a href="tel:+639567409684" class="text-gray-400 hover:text-blue-400 transition text-sm sm:text-base">
+                  +63 956-740-9684
+                </a>
+              </div>
+            </div>
+              
+            <!-- Location -->
+            <div class="flex items-start gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#1e293b] rounded-lg flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-blue-400 text-lg sm:text-xl"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold mb-1 text-sm sm:text-base">Location</h4>
+                <p class="text-gray-400 text-sm sm:text-base">Taguig City, Metro Manila</p>
+              </div>
+            </div>
+
+            <!-- GitHub and LinkedIn - Below Location -->
+            <div class="flex items-center gap-4 sm:gap-6 mt-4 sm:mt-6">
+              <h4 class="text-white font-semibold text-sm sm:text-base mr-2">Socials:</h4>
+              <a href="https://github.com/ynion-mabeamae" target="_blank" 
+                class="text-gray-400 hover:text-blue-400 transition transform hover:-translate-y-1">
+                <i class="fab fa-github text-2xl sm:text-3xl"></i>
+              </a>
+              <a href="https://linkedin.com/in/ma-bea-mae-ynion-b8263a357" target="_blank" 
+                class="text-gray-400 hover:text-blue-400 transition transform hover:-translate-y-1">
+                <i class="fab fa-linkedin text-2xl sm:text-3xl"></i>
               </a>
             </div>
           </div>
-            
-          <!-- Phone -->
-          <div class="flex items-start gap-4 mb-6">
-            <div class="w-12 h-12 bg-[#1e293b] rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-phone text-blue-400 text-xl"></i>
-            </div>
-            <div>
-              <h4 class="text-white font-semibold mb-1">Phone</h4>
-              <a href="tel:+639567409684" class="text-gray-400 hover:text-blue-400 transition">
-                +63 956-740-9684
-              </a>
-            </div>
+          
+          <!-- Right Side: Contact Form -->
+          <div class="flex-1 w-full">
+            <form class="bg-[#111] p-4 sm:p-6 md:p-8 rounded-lg border border-gray-800">
+              <div class="mb-4 sm:mb-6">
+                <label class="block text-gray-300 mb-2 text-sm sm:text-base">Name</label>
+                <input type="text" name="name" required 
+                        class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-black border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 transition text-sm sm:text-base">
+              </div>
+              
+              <div class="mb-4 sm:mb-6">
+                <label class="block text-gray-300 mb-2 text-sm sm:text-base">Email</label>
+                <input type="email" name="email" required 
+                        class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-black border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 transition text-sm sm:text-base">
+              </div>
+              
+              <div class="mb-4 sm:mb-6">
+                <label class="block text-gray-300 mb-2 text-sm sm:text-base">Message</label>
+                <textarea name="message" rows="5" required 
+                          class="w-full px-3 sm:px-4 py-2 sm:py-3 bg-black border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 transition text-sm sm:text-base"></textarea>
+              </div>
+              
+              <button type="submit" 
+                    class="w-full bg-blue-500 text-white py-2 sm:py-3 rounded-lg font-semibold hover:bg-blue-600 transition text-sm sm:text-base">
+                Send Message
+              </button>
+            </form>
           </div>
-            
-          <!-- Location -->
-          <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-[#1e293b] rounded-lg flex items-center justify-center flex-shrink-0">
-              <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
-            </div>
-            <div>
-              <h4 class="text-white font-semibold mb-1">Location</h4>
-              <p class="text-gray-400">Taguig City, Metro Manila</p>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Right Side: Contact Form -->
-        <div class="flex-1">
-          <form class="bg-[#111] p-8 rounded-lg border border-gray-800">
-            <div class="mb-6">
-              <label class="block text-gray-300 mb-2">Name</label>
-              <input type="text" name="name" required 
-                     class="w-full px-4 py-3 bg-black border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 transition">
-            </div>
-            
-            <div class="mb-6">
-              <label class="block text-gray-300 mb-2">Email</label>
-              <input type="email" name="email" required 
-                     class="w-full px-4 py-3 bg-black border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 transition">
-            </div>
-            
-            <div class="mb-6">
-              <label class="block text-gray-300 mb-2">Message</label>
-              <textarea name="message" rows="5" required 
-                        class="w-full px-4 py-3 bg-black border border-gray-800 rounded-lg text-white focus:outline-none focus:border-blue-500 transition"></textarea>
-            </div>
-            
-            <button type="submit" 
-                class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
-              Send Message
-            </button>
-          </form>
-        </div>
       </div>
     </div>
   </section>
