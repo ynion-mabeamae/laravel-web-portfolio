@@ -10,6 +10,6 @@ class Profile extends Model
         'name',
         'title',
         'description',
-        'profile_image'
+        'profile_image',
     ];
 }
