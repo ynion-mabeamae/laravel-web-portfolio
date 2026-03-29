@@ -17,6 +17,7 @@ jobs:
       with:
         php-version: '8.2'
         extensions: mbstring, xml, bcmath, ctype, fileinfo, json, mysql, zip
+        key: extensions-cache
 
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
