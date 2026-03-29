@@ -11,14 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('experiences', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->string('company');
-            $table->date('date_from');
-            $table->date('date_to')->nullable();
-            $table->timestamps();
-        });
+        Schema::rename('experience', 'experiences');
     }
 
     /**
@@ -26,6 +19,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('experiences');
+        Schema::rename('experiences', 'experience');
     }
 };
