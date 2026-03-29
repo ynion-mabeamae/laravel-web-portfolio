@@ -11,11 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v4
+
     - uses: shivammathur/cache-extensions@v1
       with:
         php-version: '8.2'
-
-    - uses: actions/checkout@v4
+        extensions: mbstring, xml, bcmath, ctype, fileinfo, json, mysql, zip
 
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
