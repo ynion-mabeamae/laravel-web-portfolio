@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Experience;
 use App\Models\Message;
 use App\Models\Organization;
-use Illuminate\Http\Request;
 use App\Models\Profile;
 use App\Models\Project;
 use App\Models\Skill;
+use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
 {
@@ -28,7 +28,7 @@ class PortfolioController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required'
+            'message' => 'required',
         ]);
 
         Message::create($request->all());

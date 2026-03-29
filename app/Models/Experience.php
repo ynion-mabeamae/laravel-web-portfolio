@@ -10,6 +10,6 @@ class Experience extends Model
         'title',
         'company',
         'date_from',
-        'date_to'
+        'date_to',
     ];
 }
