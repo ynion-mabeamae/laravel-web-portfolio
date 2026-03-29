@@ -11,6 +11,6 @@ class Project extends Model
         'description',
         'image',
         'github_link',
-        'tech_stack'
+        'tech_stack',
     ];
 }

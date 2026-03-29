@@ -2,13 +2,14 @@
 
 namespace Tests\Feature;
 
+use App\Models\Profile;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use App\Models\Profile;
 
 class ExampleTest extends TestCase
 {
     use RefreshDatabase;
+
     /**
      * A basic test example.
      */
