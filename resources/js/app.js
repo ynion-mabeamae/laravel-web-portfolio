@@ -1,5 +1,13 @@
 import './bootstrap';
 
+// Snackbar auto-hide
+const snackbar = document.getElementById('snackbar');
+if (snackbar) {
+    setTimeout(() => {
+        snackbar.style.display = 'none';
+    }, 3000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
