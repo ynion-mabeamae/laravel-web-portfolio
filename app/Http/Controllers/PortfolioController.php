@@ -16,7 +16,7 @@ class PortfolioController extends Controller
     {
         $profile = Profile::first();
         $organizations = Organization::all();
-        $experience = Experience::all();
+        $experience = Experience::orderBy('date_from', 'desc')->get();
         $skills = Skill::all();
         $projects = Project::all();
 
