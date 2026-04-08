@@ -1,5 +1,7 @@
 @extends('layouts.portfolio')
 
+@use('Illuminate\Support\Str')
+
 @if(session('status'))
     <div id="snackbar" class="fixed top-16 right-4 md:top-20 md:right-5 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50">
         {{ session('status') }}
@@ -29,7 +31,7 @@
         </div>
         <div class="flex-1 min-w-[300px] flex justify-center items-center">
           <div class="w-[400px] h-[400px] rounded-full overflow-hidden border-4 border-blue-500 shadow-[0_0_30px_rgba(59,130,246,0.5)]">
-              <img src="{{ asset('images/' . $profile->profile_image) }}" alt="Profile Picture" class="w-full h-full object-cover">
+              <img src="{{ asset('storage/' . $profile->profile_image) }}" alt="Profile Picture" class="w-full h-full object-cover">
           </div>
         </div>
       </div>
@@ -99,9 +101,11 @@
         <h3 class="text-2xl font-bold mb-6 text-blue-400">Frontend</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           @foreach($frontend as $skill)
-            <div class="bg-[#111] p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:transform hover:-translate-y-1 transition-all">
-              {!! $skill->icon !!}
-              <h3 class="text-white">{{ $skill->name }}</h3>
+            <div class="bg-[#111] p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:transform hover:-translate-y-1 transition-all flex flex-col items-center justify-center">
+              @if(Str::endsWith($skill->icon, '.png'))
+                <img src="{{ asset('images/' . $skill->icon) }}" alt="{{ $skill->name }}" style="width: 3rem; height: 3rem;">
+              @endif
+              <h3 class="text-white mt-2">{{ $skill->name }}</h3>
             </div>
           @endforeach
         </div>
@@ -115,9 +119,11 @@
         <h3 class="text-2xl font-bold mb-6 text-blue-400">Backend</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           @foreach($backend as $skill)
-            <div class="bg-[#111] p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:transform hover:-translate-y-1 transition-all">
-              {!! $skill->icon !!}
-              <h3 class="text-white">{{ $skill->name }}</h3>
+            <div class="bg-[#111] p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:transform hover:-translate-y-1 transition-all flex flex-col items-center justify-center">
+              @if(Str::endsWith($skill->icon, '.png'))
+                <img src="{{ asset('images/' . $skill->icon) }}" alt="{{ $skill->name }}" style="width: 3rem; height: 3rem;">
+              @endif
+              <h3 class="text-white mt-2">{{ $skill->name }}</h3>
             </div>
           @endforeach
         </div>
@@ -131,9 +137,11 @@
         <h3 class="text-2xl font-bold mb-6 text-blue-400">Tools</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           @foreach($tools as $skill)
-            <div class="bg-[#111] p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:transform hover:-translate-y-1 transition-all">
-              {!! $skill->icon !!}
-              <h3 class="text-white">{{ $skill->name }}</h3>
+            <div class="bg-[#111] p-4 rounded-lg border border-gray-700 hover:border-blue-500 hover:transform hover:-translate-y-1 transition-all flex flex-col items-center justify-center">
+              @if(Str::endsWith($skill->icon, '.png'))
+                <img src="{{ asset('images/' . $skill->icon) }}" alt="{{ $skill->name }}" style="width: 3rem; height: 3rem;">
+              @endif
+              <h3 class="text-white mt-2">{{ $skill->name }}</h3>
             </div>
           @endforeach
         </div>
@@ -148,11 +156,15 @@
       <h2 class="text-4xl font-bold mb-12 text-blue-500 text-center">My Projects</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          @foreach($projects as $project)
-           <div class="bg-[#111] rounded-lg overflow-hidden border border-gray-800 hover:transform hover:-translate-y-2 transition-all">
-              <div class="h-70 overflow-hidden">
-                <img src="{{ asset('images/' . $project->image) }}" alt="{{ $project->title }}" class="w-full h-full object-cover">
-              </div>
+@foreach($projects as $project)
+            <div class="bg-[#111] rounded-lg overflow-hidden border border-gray-800 hover:transform hover:-translate-y-2 transition-all">
+               <div class="h-70 overflow-hidden">
+                  @if($project->image)
+                  <img src="{{ asset('storage/' . $project->image) }}" alt="{{ $project->title }}" class="w-full h-full object-cover">
+                @else
+                  <div class="w-full h-full bg-gray-800 flex items-center justify-center text-gray-500">No Image</div>
+                @endif
+                </div>
               <div class="p-6">
                 <h3 class="text-2xl font-bold text-white mb-3">
                   {{ $project->title }}

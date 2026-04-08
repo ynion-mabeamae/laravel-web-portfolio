@@ -71,3 +71,12 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Filament Admin Panel Styles */
+.fi-sidebar,
+aside[data-floating-sidebar],
+aside[class*="fi-sidebar"],
+div[class*="fi-sidebar"],
+.w-full.h-screen.flex.rounded-r-xl {
+    border-right: 1px solid #374151 !important;
+}

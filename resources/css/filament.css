@@ -1,0 +1,6 @@
+/* Custom CSS for Filament Admin Panel */
+
+/* Sidebar right border - Using Filament's render hook */
+:root {
+    --fi-sidebar-border-color: #374151;
+}
