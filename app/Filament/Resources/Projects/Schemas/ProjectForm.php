@@ -3,8 +3,8 @@
 namespace App\Filament\Resources\Projects\Schemas;
 
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Str;
 
@@ -23,7 +23,7 @@ class ProjectForm
                     ->disk('public')
                     ->directory('images')
                     ->getUploadedFileNameForStorageUsing(
-                        fn($file) => Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)) . '.' . $file->getClientOriginalExtension()
+                        fn ($file) => Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)).'.'.$file->getClientOriginalExtension()
                     )
                     ->image()
                     ->imageCropAspectRatio('16/9')

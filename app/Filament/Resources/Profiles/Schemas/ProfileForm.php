@@ -23,7 +23,7 @@ class ProfileForm
                     ->disk('public')
                     ->directory('images')
                     ->getUploadedFileNameForStorageUsing(
-                        fn($file) => Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)) . '.' . $file->getClientOriginalExtension()
+                        fn ($file) => Str::slug(pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME)).'.'.$file->getClientOriginalExtension()
                     )
                     ->image()
                     ->required(),
